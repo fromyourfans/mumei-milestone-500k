@@ -12,8 +12,8 @@
         <div class="mainphoto-box">
           <v-img
             :aspect-ratio="1"
-            lazy-src="https://pbs.twimg.com/profile_images/1431005685307691009/htnq498e_400x400.jpg"
-            src="https://pbs.twimg.com/profile_images/1431005685307691009/htnq498e_400x400.jpg"
+            lazy-src="https://pbs.twimg.com/media/FDx_j3wVUAQzKkb?format=jpg&name=medium"
+            src="https://pbs.twimg.com/media/FDx_j3wVUAQzKkb?format=jpg&name=medium"
           ></v-img>
         </div>
       </div>
