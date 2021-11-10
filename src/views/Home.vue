@@ -46,20 +46,20 @@
         <v-row no-gutters class="cards px-4 mb-8">
           <v-col class="text-center">
             <v-btn text class="brown--text darken-3" @click="scrollTo('#canvas')">
-              <v-avatar left size="40"><img src="../assets/feather.png" class="navimg"></v-avatar>
-              <span class="pl-4 text-h6">Canvas</span>
+              <v-avatar left size="34"><img src="../assets/rune2.png" class="navimg"></v-avatar>
+              <span class="pl-2 text-h6">Canvas</span>
             </v-btn>
             <v-btn text class="brown--text darken-3" @click="scrollTo('#messages')">
-              <v-avatar left size="40"><img src="../assets/feather.png" class="navimg"></v-avatar>
-              <span class="pl-4 text-h6">Messages</span>
+              <v-avatar left size="34"><img src="../assets/rune2.png" class="navimg"></v-avatar>
+              <span class="pl-2 text-h6">Messages</span>
             </v-btn>
             <v-btn text class="brown--text darken-3" @click="scrollTo('#artworks')">
-              <v-avatar left size="40"><img src="../assets/feather.png" class="navimg"></v-avatar>
-              <span class="pl-4 text-h6">Artworks</span>
+              <v-avatar left size="34"><img src="../assets/rune2.png" class="navimg"></v-avatar>
+              <span class="pl-2 text-h6">Artworks</span>
             </v-btn>
             <v-btn text class="brown--text darken-3" @click="scrollTo('#tour')">
-              <v-avatar left size="40"><img src="../assets/feather.png" class="navimg"></v-avatar>
-              <span class="pl-4 text-h6">Tour</span>
+              <v-avatar left size="34"><img src="../assets/rune2.png" class="navimg"></v-avatar>
+              <span class="pl-2 text-h6">Tour</span>
             </v-btn>
           </v-col>
         </v-row>
