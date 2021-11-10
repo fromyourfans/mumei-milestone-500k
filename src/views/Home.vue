@@ -47,7 +47,7 @@
           <v-col class="text-center">
             <v-btn text class="brown--text darken-3" @click="scrollTo('#canvas')">
               <v-avatar left size="34"><img src="../assets/rune2.png" class="navimg"></v-avatar>
-              <span class="pl-2 text-h6">Canvas</span>
+              <span class="pl-2 text-h6">Mural</span>
             </v-btn>
             <v-btn text class="brown--text darken-3" @click="scrollTo('#messages')">
               <v-avatar left size="34"><img src="../assets/rune2.png" class="navimg"></v-avatar>
@@ -67,15 +67,17 @@
         <!-- CANVAS -->
         <v-row no-gutters class="mb-8" id="canvas">
           <v-col class="text-h6 text-center px-2 brown lighten-3 mx-8 rounded-xl">
-            CANVAS
+            Civilization's Mural for its Guardian
             <v-btn text class="float-right brown--text darken-3" @click="scrollTo('#header')">
               TOP
             </v-btn>
           </v-col>
         </v-row>
         <v-row no-gutters class="mb-8">
-          <v-col class="cards px-4">
-            canvas
+          <v-col class="cards px-16">
+            <inner-image-zoom
+              :src="CanvasImg"
+              :zoomSrc="CanvasImg" />
           </v-col>
         </v-row>
 
@@ -136,6 +138,9 @@
 </template>
 
 <script>
+import InnerImageZoom from 'vue-inner-image-zoom';
+// import CanvasImg from '../content/canvas.png';
+
 const LOREM_IPSUM = `
   Lorem ipsum dolor sit amet, consectetur adipiscing elit.
   Suspendisse viverra, eros vel venenatis pharetra,
@@ -151,6 +156,7 @@ const LOREM_IPSUM = `
 export default {
   data: () => ({
     cards: [],
+    CanvasImg: 'https://cdn.discordapp.com/attachments/880074875006484551/896932818096115752/magicaldraw_20211011_031915.png',
   }),
   methods: {
     randomName() {
@@ -174,6 +180,9 @@ export default {
       name: this.randomName(),
       text: this.randomMessage(),
     }));
+  },
+  components: {
+    'inner-image-zoom': InnerImageZoom,
   },
 };
 </script>
