@@ -91,11 +91,11 @@
         <v-row no-gutters>
           <v-col class="cards px-4">
             <div v-masonry transition-duration="0.3s" item-selector=".card">
-              <div v-masonry-tile class="card" v-for="(item, ix) in cards" :key="`card-${ix}`">
+              <div v-masonry-tile class="card pt-6" v-for="(item, ix) in cards" :key="`card-${ix}`">
                 <div class="binder"></div>
                 <div class="wings"><img src="../assets/feather.png" /></div>
-                <div class="card-name text-subtitle-2 pr-12 py-2">{{item.name}}</div>
-                <div class="card-text text-body-2 pr-4 pb-2">{{item.text}}</div>
+                <div class="card-name text-subtitle-2 pr-12">{{item.name}}</div>
+                <div class="card-text text-body-2 pr-4 pb-4">{{item.text}}</div>
               </div>
             </div>
           </v-col>
@@ -181,18 +181,22 @@ export default {
 <style lang="scss" scoped>
 .header {
   width:100%;
-  height:150px;
+  height:200px;
   background:linear-gradient(to right, #907D6F 10%, #E9DCCD 40%, #E9DCCD 60%, #907D6F 90%);
   position:relative;
   .headbg {
     width:100%;
-    height:150px;
+    height:200px;
     position:absolute;
     z-index:1;
+    /*background-image:url("");
+    background-position: center -200px;
+    background-repeat: no-repeat;
+    background-size:900px;*/
   }
   .wings {
     width:100%;
-    height:150px;
+    height:200px;
     position:absolute;
     z-index:2;
   }
@@ -246,25 +250,27 @@ export default {
         right:-10px;
       }
     }
-    .navimg {
-      margin-top:-10px;
-    }
     .cards {
       .card {
-        background:#f1eee9;
+        // background:#f1eee9;
         position:relative;
-        padding-left:15px;
+        // padding-left:15px;
+        padding:0px 40px;
         min-height:100px;
         margin-bottom:10px;
-        border:1px solid #564442;
-        .binder {
-          background:#564442;
-          position:absolute;
-          top:0px;
-          left:0px;
-          width:10px;
-          height:100%;
-        }
+        // border:1px solid #564442;
+        background-image: url('../assets/scroll-1.png'), url('../assets/scroll-2.png');
+        background-repeat: no-repeat;
+        background-position: top center, bottom center;
+        background-size: 100% 24px, 100% calc(100% - 24px);
+        // .binder {
+        //   background:#564442;
+        //   position:absolute;
+        //   top:0px;
+        //   left:0px;
+        //   width:10px;
+        //   height:100%;
+        // }
         .wings {
           position:absolute;
           top:-30px; right:-20px;
@@ -275,6 +281,30 @@ export default {
         }
         .card-name {
           color:#984B4A;
+          font-weight:bold;
+          text-shadow:
+            -2px -2px 0 #ffffff,
+            0   -2px 0 #ffffff,
+            2px -2px 0 #ffffff,
+            2px  0   0 #ffffff,
+            2px  2px 0 #ffffff,
+            0    2px 0 #ffffff,
+            -2px  2px 0 #ffffff,
+            -2px  0   0 #ffffff;
+        }
+        .card-text {
+          // color: #E9DCCD;
+          color: #131313;
+          font-weight:bold;
+          // text-shadow:
+          //   -2px -2px 0 #131313,
+          //   0   -2px 0 #131313,
+          //   2px -2px 0 #131313,
+          //   2px  0   0 #131313,
+          //   2px  2px 0 #131313,
+          //   0    2px 0 #131313,
+          //   -2px  2px 0 #131313,
+          //   -2px  0   0 #131313;
         }
       }
     }
