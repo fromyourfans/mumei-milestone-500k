@@ -57,27 +57,29 @@
               <v-avatar left size="34"><img src="../assets/rune2.png" class="navimg"></v-avatar>
               <span class="pl-2 text-h6">Artworks</span>
             </v-btn>
-            <v-btn text class="brown--text darken-3" @click="scrollTo('#tour')">
+            <v-btn text class="brown--text darken-3" @click="scrollTo('#games')">
               <v-avatar left size="34"><img src="../assets/rune2.png" class="navimg"></v-avatar>
-              <span class="pl-2 text-h6">Tour</span>
+              <span class="pl-2 text-h6">Games</span>
             </v-btn>
           </v-col>
         </v-row>
 
         <!-- CANVAS -->
-        <v-row no-gutters class="mb-8" id="canvas">
+        <v-row no-gutters class="mb-2" id="canvas">
           <v-col class="text-h6 text-center px-2 brown lighten-3 mx-8 rounded-xl">
-            Civilization's Mural for its Guardian
+            MURAL
             <v-btn text class="float-right brown--text darken-3" @click="scrollTo('#header')">
               TOP
             </v-btn>
           </v-col>
         </v-row>
         <v-row no-gutters class="mb-8">
-          <v-col class="cards px-16">
-            <inner-image-zoom
-              :src="CanvasImg"
-              :zoomSrc="CanvasImg" />
+          <v-col class="mural" sm="10" offset-sm="1">
+            <div class="mural-container mx-auto">
+              <inner-image-zoom
+                :src="CanvasImg"
+                :zoomSrc="CanvasImg" />
+            </div>
           </v-col>
         </v-row>
 
@@ -121,7 +123,7 @@
         <!-- GAMES -->
         <v-row no-gutters class="mt-8 mb-8" id="games">
           <v-col class="text-h6 text-center px-2 brown lighten-3 mx-8 rounded-xl">
-            TOUR
+            GAMES
             <v-btn text class="float-right brown--text darken-3" @click="scrollTo('#header')">
               TOP
             </v-btn>
@@ -257,6 +259,11 @@ export default {
       }
       &.ribbon-right {
         right:-10px;
+      }
+    }
+    .mural {
+      .mural-container {
+        max-width:calc(100vh - 80px);
       }
     }
     .cards {
