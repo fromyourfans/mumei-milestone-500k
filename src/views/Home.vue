@@ -59,7 +59,7 @@
             </v-btn>
             <v-btn text class="brown--text darken-3" @click="scrollTo('#games')">
               <v-avatar left size="34"><img src="../assets/rune2.png" class="navimg"></v-avatar>
-              <span class="pl-2 text-h6">Games</span>
+              <span class="pl-2 text-h6">Collage</span>
             </v-btn>
           </v-col>
         </v-row>
@@ -127,15 +127,19 @@
         <!-- GAMES -->
         <v-row no-gutters class="mt-8 mb-8" id="games">
           <v-col class="text-h6 text-center px-2 brown lighten-3 mx-8 rounded-xl">
-            GAMES
+            COLLAGE
             <v-btn text class="float-right brown--text darken-3" @click="scrollTo('#header')">
               TOP
             </v-btn>
           </v-col>
         </v-row>
         <v-row no-gutters class="mb-8">
-          <v-col class="cards px-4">
-            games
+          <v-col class="collage" sm="10" offset-sm="1">
+            <div class="collage-container mx-auto">
+              <inner-image-zoom
+                :src="CollageImg"
+                :zoomSrc="CollageImg" />
+            </div>
           </v-col>
         </v-row>
       </v-container>
@@ -173,6 +177,7 @@ export default {
       '1456598139041771529',
     ],
     CanvasImg: 'https://cdn.discordapp.com/attachments/880074875006484551/896932818096115752/magicaldraw_20211011_031915.png',
+    CollageImg: 'https://pbs.twimg.com/media/FEeLACeVQAENyBR?format=jpg&name=large',
   }),
   methods: {
     randomName() {
@@ -337,6 +342,11 @@ export default {
           //   -2px  2px 0 #131313,
           //   -2px  0   0 #131313;
         }
+      }
+    }
+    .collage {
+      .collage-container {
+        max-width:calc(100vh - 80px);
       }
     }
   }
