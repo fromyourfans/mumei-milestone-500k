@@ -99,7 +99,7 @@
                 <div class="binder"></div>
                 <div class="wings"><img src="../assets/feather.png" /></div>
                 <div class="card-name text-subtitle-2 pr-12">{{item.name}}</div>
-                <div class="card-text text-body-2 pr-4 pb-4">{{item.text}}</div>
+                <div class="card-text text-body-2 pr-4 pb-4">{{item.message}}</div>
               </div>
             </div>
           </v-col>
@@ -148,8 +148,10 @@
 </template>
 
 <script>
+import axios from 'axios';
 import InnerImageZoom from 'vue-inner-image-zoom';
 import { Tweet } from 'vue-tweet-embed';
+import backupData from '@/data/data.json';
 // import CanvasImg from '../content/canvas.png';
 
 const LOREM_IPSUM = `
@@ -166,28 +168,13 @@ const LOREM_IPSUM = `
 
 export default {
   data: () => ({
+    source: 'https://vtubertools.sfo3.digitaloceanspaces.com/tribute/mumei500k.json',
     cards: [],
-    tweets: [
-      '1458110024803250177',
-      '1457804629224431619',
-      '1457890689111429128',
-      '1456299197964058627',
-      '1456155810954821634',
-      '1456939520209735689',
-      '1456598139041771529',
-    ],
+    tweets: [],
     CanvasImg: 'https://cdn.discordapp.com/attachments/880074875006484551/896932818096115752/magicaldraw_20211011_031915.png',
     CollageImg: 'https://pbs.twimg.com/media/FEeLACeVQAENyBR?format=jpg&name=large',
   }),
   methods: {
-    randomName() {
-      return LOREM_IPSUM[Math.floor(Math.random() * LOREM_IPSUM.length)];
-    },
-    randomMessage() {
-      const length = 10 + Math.floor(Math.random() * (LOREM_IPSUM.length - 10));
-      const start = Math.floor(Math.random() * (LOREM_IPSUM.length - length));
-      return LOREM_IPSUM.slice(start, start + length).join(' ');
-    },
     scrollTo(target) {
       this.$vuetify.goTo(target, {
         duration: 1000,
@@ -197,10 +184,14 @@ export default {
     },
   },
   mounted() {
-    this.cards = [...new Array(50)].map(() => ({
-      name: this.randomName(),
-      text: this.randomMessage(),
-    }));
+    // Load data
+    (async () => {
+      const fetchSource = await axios.get(this.source).catch(() => null);
+      const data = fetchSource && fetchSource.data ? fetchSource.data : backupData;
+      this.cards = Object.values(data.messages).sort((a, b) => a.time - b.time);
+      this.tweets = Object.values(data.tweets).map((tweet) => String(tweet.id));
+      console.log(data);
+    })();
   },
   components: {
     'inner-image-zoom': InnerImageZoom,
