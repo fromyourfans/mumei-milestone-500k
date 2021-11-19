@@ -57,7 +57,7 @@
               <v-avatar left size="34"><img src="../assets/rune2.png" class="navimg"></v-avatar>
               <span class="pl-2 text-h6">Artworks</span>
             </v-btn>
-            <v-btn text class="brown--text darken-3" @click="scrollTo('#games')">
+            <v-btn text class="brown--text darken-3" @click="scrollTo('#collage')">
               <v-avatar left size="34"><img src="../assets/rune2.png" class="navimg"></v-avatar>
               <span class="pl-2 text-h6">Collage</span>
             </v-btn>
@@ -124,8 +124,8 @@
           </v-col>
         </v-row>
 
-        <!-- GAMES -->
-        <v-row no-gutters class="mt-8 mb-8" id="games">
+        <!-- COLLAGE -->
+        <v-row no-gutters class="mt-8 mb-8" id="collage">
           <v-col class="text-h6 text-center px-2 brown lighten-3 mx-8 rounded-xl">
             COLLAGE
             <v-btn text class="float-right brown--text darken-3" @click="scrollTo('#header')">
@@ -152,19 +152,6 @@ import axios from 'axios';
 import InnerImageZoom from 'vue-inner-image-zoom';
 import { Tweet } from 'vue-tweet-embed';
 import backupData from '@/data/data.json';
-// import CanvasImg from '../content/canvas.png';
-
-const LOREM_IPSUM = `
-  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-  Suspendisse viverra, eros vel venenatis pharetra,
-  nisi neque porta enim, vitae tincidunt turpis metus a tellus.
-  Quisque dictum fringilla felis eu ornare.
-  Nulla non urna vitae neque pretium pharetra id eget elit.
-  Aenean blandit magna quis augue dignissim, eu tincidunt dolor iaculis.
-  Nunc scelerisque nibh et varius imperdiet.
-  Phasellus sagittis, nunc et pharetra viverra, libero purus sodales ex,
-  ut mattis enim lectus auctor felis. Donec ut lobortis leo.
-  `.split(/\s/g).filter((v) => !!v).map((v) => v.replace(/[\W_]+/g, ''));
 
 export default {
   data: () => ({
@@ -211,10 +198,6 @@ export default {
     height:200px;
     position:absolute;
     z-index:1;
-    /*background-image:url("");
-    background-position: center -200px;
-    background-repeat: no-repeat;
-    background-size:900px;*/
   }
   .wings {
     width:100%;
@@ -279,25 +262,14 @@ export default {
     }
     .cards {
       .card {
-        // background:#f1eee9;
         position:relative;
-        // padding-left:15px;
         padding:0px 40px;
         min-height:100px;
         margin-bottom:10px;
-        // border:1px solid #564442;
         background-image: url('../assets/scroll-1.png'), url('../assets/scroll-2.png');
         background-repeat: no-repeat;
         background-position: top center, bottom center;
         background-size: 100% 24px, 100% calc(100% - 24px);
-        // .binder {
-        //   background:#564442;
-        //   position:absolute;
-        //   top:0px;
-        //   left:0px;
-        //   width:10px;
-        //   height:100%;
-        // }
         .wings {
           position:absolute;
           top:-30px; right:-20px;
@@ -320,18 +292,8 @@ export default {
             -2px  0   0 #ffffff;
         }
         .card-text {
-          // color: #E9DCCD;
           color: #131313;
           font-weight:bold;
-          // text-shadow:
-          //   -2px -2px 0 #131313,
-          //   0   -2px 0 #131313,
-          //   2px -2px 0 #131313,
-          //   2px  0   0 #131313,
-          //   2px  2px 0 #131313,
-          //   0    2px 0 #131313,
-          //   -2px  2px 0 #131313,
-          //   -2px  0   0 #131313;
         }
       }
     }
