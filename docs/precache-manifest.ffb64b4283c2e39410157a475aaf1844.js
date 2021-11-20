@@ -1,15 +1,19 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "6ad09f81d52cd8198cd4",
-    "url": "/css/app.3ad8568c.css"
+    "revision": "d37237768305a804353b",
+    "url": "/css/app.ee9b0287.css"
   },
   {
-    "revision": "9e79670a4de6e4d09dcb",
-    "url": "/css/chunk-vendors.45cd87d1.css"
+    "revision": "e5d8d2af2e2c1a150309",
+    "url": "/css/chunk-vendors.0a24d4cc.css"
   },
   {
     "revision": "d1fbd9c6a301240f57386e70fb8a2276",
     "url": "/favicon.ico"
+  },
+  {
+    "revision": "f644aecd19899fd957494e97741fafbc",
+    "url": "/img/credits-civ.f644aecd.png"
   },
   {
     "revision": "0ee2ad341ab86050cb469c4a3483f0c6",
@@ -92,16 +96,16 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/img/scroll-2.84d9df8e.png"
   },
   {
-    "revision": "4499e789264bf3d47830d2c12e7c0dcb",
+    "revision": "15d35df83c5698715f0270312cb736cd",
     "url": "/index.html"
   },
   {
-    "revision": "6ad09f81d52cd8198cd4",
-    "url": "/js/app.712b039c.js"
+    "revision": "d37237768305a804353b",
+    "url": "/js/app.bee48e80.js"
   },
   {
-    "revision": "9e79670a4de6e4d09dcb",
-    "url": "/js/chunk-vendors.63efd6b5.js"
+    "revision": "e5d8d2af2e2c1a150309",
+    "url": "/js/chunk-vendors.80ee3633.js"
   },
   {
     "revision": "6079b1616da5984a19f2c59b3ba2f75d",
