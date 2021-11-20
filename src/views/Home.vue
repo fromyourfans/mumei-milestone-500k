@@ -142,6 +142,84 @@
             </div>
           </v-col>
         </v-row>
+
+        <!-- CREDITS -->
+        <v-row no-gutters class="mt-8 mb-8">
+          <v-col class="text-h6 text-center px-2 brown lighten-3 mx-8 rounded-xl">
+            CREDITS
+            <v-btn text class="float-right brown--text darken-3" @click="scrollTo('#header')">
+              TOP
+            </v-btn>
+          </v-col>
+        </v-row>
+        <v-row class="mb-8 px-16">
+          <v-col cols="12" sm="6" lg="4">
+            <ul>
+              <li class="pb-4">
+                <strong class="mr-2">jetrico</strong>
+                <v-icon>mdi-twitter</v-icon>
+                <a target="_blank" href="https://twitter.com/jetri_co">@jetri_co</a>
+                <ul>
+                  <li>Website development, graphics</li>
+                  <li>Backend automations</li>
+                </ul>
+              </li>
+              <li class="pb-4">
+                <strong class="mr-2">Mumei Civilization Discord</strong>
+                <v-icon>mdi-discord</v-icon>
+                <ul>
+                  <li>Event organization</li>
+                  <li>Mural, the community drawing</li>
+                  <li>Message/art collection</li>
+                  <li>Community announcements, etc</li>
+                </ul>
+              </li>
+              <li class="pb-4">
+                <strong class="mr-2">Mumei Sanctuary Discord</strong>
+                <v-icon>mdi-discord</v-icon>
+                <ul>
+                  <li>Art collage</li>
+                  <li>Yosetti message board</li>
+                  <li>Community announcements, etc</li>
+                </ul>
+              </li>
+              <li class="pb-4">
+                <strong class="mr-2">水卯</strong>
+                <v-icon>mdi-twitter</v-icon>
+                <a target="_blank" href="https://twitter.com/Minau_">@Minau_</a>
+                <ul>
+                  <li>Mumei Sanctuary logo</li>
+                </ul>
+              </li>
+              <li class="pb-4">
+                <strong class="mr-2">galex</strong>
+                <!-- <v-icon>mdi-twitter</v-icon>
+                <a target="_blank" href="https://twitter.com/Minau_">@Minau_</a> -->
+                <ul>
+                  <li>Message card graphic</li>
+                </ul>
+              </li>
+            </ul>
+          </v-col>
+          <v-col cols="12" sm="6" lg="8">
+            <v-container>
+              <v-row>
+                <v-col cols="12" lg="6">
+                  <v-img
+                    lazy-src="../assets/credits-civ.png"
+                    src="../assets/credits-civ.png"
+                  ></v-img>
+                </v-col>
+                <v-col cols="12" lg="6">
+                  <v-img
+                    lazy-src="../assets/credits-civ.png"
+                    src="../assets/credits-civ.png"
+                  ></v-img>
+                </v-col>
+              </v-row>
+            </v-container>
+          </v-col>
+        </v-row>
       </v-container>
     </div>
   </div>
