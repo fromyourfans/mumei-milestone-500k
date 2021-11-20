@@ -230,14 +230,18 @@ import axios from 'axios';
 import InnerImageZoom from 'vue-inner-image-zoom';
 import { Tweet } from 'vue-tweet-embed';
 import backupData from '@/data/data.json';
+import CanvasImg from '@/assets/sample1.png';
+import CollageImg from '@/assets/sample2.png';
 
 export default {
   data: () => ({
     source: 'https://vtubertools.sfo3.digitaloceanspaces.com/tribute/mumei500k.json',
     cards: [],
     tweets: [],
-    CanvasImg: 'https://cdn.discordapp.com/attachments/880074875006484551/896932818096115752/magicaldraw_20211011_031915.png',
-    CollageImg: 'https://yt3.ggpht.com/m9wSBI0oUz24Y_qxUEJ6-XofvnC6GjWxN0Ut79IG8Vn-3Z49T8VOJEXa03uN9JDlJN6XVy7ZqbM=w4500',
+    CanvasImg,
+    CollageImg,
+    // CanvasImg: 'https://cdn.discordapp.com/attachments/880074875006484551/896932818096115752/magicaldraw_20211011_031915.png',
+    // CollageImg: 'https://yt3.ggpht.com/m9wSBI0oUz24Y_qxUEJ6-XofvnC6GjWxN0Ut79IG8Vn-3Z49T8VOJEXa03uN9JDlJN6XVy7ZqbM=w4500',
   }),
   methods: {
     scrollTo(target) {
