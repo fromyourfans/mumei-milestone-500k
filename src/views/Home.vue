@@ -237,7 +237,7 @@ export default {
     cards: [],
     tweets: [],
     CanvasImg: 'https://cdn.discordapp.com/attachments/880074875006484551/896932818096115752/magicaldraw_20211011_031915.png',
-    CollageImg: 'https://pbs.twimg.com/media/FEeLACeVQAENyBR?format=jpg&name=large',
+    CollageImg: 'https://yt3.ggpht.com/m9wSBI0oUz24Y_qxUEJ6-XofvnC6GjWxN0Ut79IG8Vn-3Z49T8VOJEXa03uN9JDlJN6XVy7ZqbM=w4500',
   }),
   methods: {
     scrollTo(target) {
@@ -335,7 +335,7 @@ export default {
     }
     .mural {
       .mural-container {
-        max-width:calc(100vh - 80px);
+        // max-width:calc(100vh - 80px);
       }
     }
     .cards {
@@ -377,7 +377,7 @@ export default {
     }
     .collage {
       .collage-container {
-        max-width:calc(100vh - 80px);
+        // max-width:calc(100vh - 80px);
       }
     }
   }
