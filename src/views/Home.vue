@@ -229,6 +229,7 @@
 import axios from 'axios';
 import InnerImageZoom from 'vue-inner-image-zoom';
 import { Tweet } from 'vue-tweet-embed';
+import twemoji from 'twemoji';
 import backupData from '@/data/data.json';
 import CanvasImg from '@/assets/sample1.png';
 import CollageImg from '@/assets/sample2.png';
@@ -259,7 +260,9 @@ export default {
       const data = fetchSource && fetchSource.data ? fetchSource.data : backupData;
       this.cards = Object.values(data.messages).sort((a, b) => a.time - b.time);
       this.tweets = Object.values(data.tweets).map((tweet) => String(tweet.id));
-      console.log(data);
+      this.$nextTick(() => {
+        twemoji.parse(document.body);
+      });
     })();
   },
   components: {
@@ -409,6 +412,14 @@ export default {
   .card {
     width:96%;
     margin:10px 2%;
+  }
+}
+</style>
+
+<style lang="scss">
+.card-text {
+  img {
+    height:1rem;
   }
 }
 </style>
