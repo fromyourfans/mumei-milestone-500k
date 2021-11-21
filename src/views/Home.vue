@@ -168,6 +168,7 @@
                 <strong class="mr-2">Mumei Civilization Discord</strong>
                 <v-icon>mdi-discord</v-icon>
                 <ul>
+                  <li><a href="https://discord.gg/mumei-civilization" target="_blank">Server Invite</a></li>
                   <li>Event organization</li>
                   <li>Mural, the community drawing</li>
                   <li>Message/art collection</li>
@@ -178,6 +179,7 @@
                 <strong class="mr-2">Mumei Sanctuary Discord</strong>
                 <v-icon>mdi-discord</v-icon>
                 <ul>
+                  <li><a href="https://discord.gg/hoomanity" target="_blank">Server Invite</a></li>
                   <li>Art collage</li>
                   <li>Yosetti message board</li>
                   <li>Community announcements, etc</li>
@@ -188,7 +190,7 @@
                 <v-icon>mdi-twitter</v-icon>
                 <a target="_blank" href="https://twitter.com/Minau_">@Minau_</a>
                 <ul>
-                  <li>Mumei Sanctuary logo</li>
+                  <li>Mumei Sanctuary Discord logo</li>
                 </ul>
               </li>
               <li class="pb-4">
@@ -212,8 +214,8 @@
                 </v-col>
                 <v-col cols="12" lg="6">
                   <v-img
-                    lazy-src="../assets/credits-civ.png"
-                    src="../assets/credits-civ.png"
+                    lazy-src="../assets/credits-sanc.png"
+                    src="../assets/credits-sanc.png"
                   ></v-img>
                 </v-col>
               </v-row>
