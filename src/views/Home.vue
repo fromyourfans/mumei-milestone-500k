@@ -95,6 +95,21 @@
         <v-row no-gutters>
           <v-col class="cards px-4">
             <div v-masonry transition-duration="0.3s" item-selector=".card">
+              <div class="card card-dark pt-6">
+                <div class="binder"></div>
+                <div class="card-name text-h6 blue--text text-center">Yosetti Board</div>
+                <div class="card-text text-body-2 pr-4 black--text pb-4 text-center">
+                  Additional messages from the community can be found
+                  over at the Yosetti message board:
+                  <div class="text--center mt-2">
+                    <a class="card-name blue--text text-decoration-none text-h6"
+                      href="https://yosetti.com/mainyosegakis/gift_send_web?id=1989690&sc=VEhZ4"
+                      target="_blank">
+                      OPEN
+                    </a>
+                  </div>
+                </div>
+              </div>
               <div v-masonry-tile class="card pt-6" v-for="(item, ix) in cards" :key="`card-${ix}`">
                 <div class="binder"></div>
                 <div class="wings"><img src="../assets/feather.png" /></div>
@@ -357,6 +372,9 @@ export default {
         background-repeat: no-repeat;
         background-position: top center, bottom center;
         background-size: 100% 24px, 100% calc(100% - 24px);
+        &.card-dark {
+          background-image: url('../assets/scroll-1.png'), url('../assets/scroll-2.png');
+        }
         .wings {
           position:absolute;
           top:-30px; right:-20px;
