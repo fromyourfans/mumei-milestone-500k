@@ -348,7 +348,7 @@ export default {
         padding:0px 40px;
         min-height:100px;
         margin-bottom:10px;
-        background-image: url('../assets/scroll-1.png'), url('../assets/scroll-2.png');
+        background-image: url('../assets/scroll-light-1.png'), url('../assets/scroll-light-2.png');
         background-repeat: no-repeat;
         background-position: top center, bottom center;
         background-size: 100% 24px, 100% calc(100% - 24px);
@@ -361,7 +361,8 @@ export default {
           }
         }
         .card-name {
-          color:#984B4A;
+          color:#000000;
+          // color:#984B4A;
           font-weight:bold;
           text-shadow:
             -2px -2px 0 #ffffff,
@@ -374,7 +375,7 @@ export default {
             -2px  0   0 #ffffff;
         }
         .card-text {
-          color: #131313;
+          color: #262626;
           font-weight:bold;
         }
       }
