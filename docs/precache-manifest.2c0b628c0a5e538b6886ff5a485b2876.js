@@ -1,7 +1,7 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "979305569ad6e2a619d7",
-    "url": "/css/app.1e821269.css"
+    "revision": "93fb34ffea332f19c379",
+    "url": "/css/app.351b958c.css"
   },
   {
     "revision": "17e5de3dd7bcdcc296d1",
@@ -14,10 +14,6 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "f644aecd19899fd957494e97741fafbc",
     "url": "/img/credits-civ.f644aecd.png"
-  },
-  {
-    "revision": "cf69db49d8bec251fe071ea1dbcf7452",
-    "url": "/img/credits-sanc.cf69db49.png"
   },
   {
     "revision": "0ee2ad341ab86050cb469c4a3483f0c6",
@@ -88,12 +84,12 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/img/icons/safari-pinned-tab.svg"
   },
   {
-    "revision": "31e771a23025b6af19a1ff33d7cda371",
-    "url": "/img/rune2.31e771a2.png"
+    "revision": "b34eb720fbbfcbd1fbd9f49ded3fa25a",
+    "url": "/img/mural1.b34eb720.png"
   },
   {
-    "revision": "a496fda5a6aeed7c7c6b7f4e0fd84740",
-    "url": "/img/sample1.a496fda5.png"
+    "revision": "31e771a23025b6af19a1ff33d7cda371",
+    "url": "/img/rune2.31e771a2.png"
   },
   {
     "revision": "859020305625ab3dc40d48d8b481ca05",
@@ -116,12 +112,12 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/img/scroll-light-2.e9c4958c.png"
   },
   {
-    "revision": "b1376ae389f74960a91241207edd5a52",
+    "revision": "2dfdb0589735244400355f6e8def6d12",
     "url": "/index.html"
   },
   {
-    "revision": "979305569ad6e2a619d7",
-    "url": "/js/app.4ffd7fe8.js"
+    "revision": "93fb34ffea332f19c379",
+    "url": "/js/app.3e0d4fa7.js"
   },
   {
     "revision": "17e5de3dd7bcdcc296d1",
