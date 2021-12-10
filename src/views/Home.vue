@@ -67,7 +67,7 @@
         <!-- CANVAS -->
         <v-row no-gutters class="mb-2" id="canvas">
           <v-col class="text-h6 text-center px-2 brown lighten-3 mx-8 rounded-xl">
-            MURAL
+            COMMUNITY MURAL
             <v-btn text class="float-right brown--text darken-3" @click="scrollTo('#header')">
               TOP
             </v-btn>
@@ -181,9 +181,11 @@
               </li>
               <li class="pb-4">
                 <strong class="mr-2">Mumei Civilization Discord</strong>
-                <v-icon>mdi-discord</v-icon>
                 <ul>
-                  <li><a href="https://discord.gg/mumei-civilization" target="_blank">Server Invite</a></li>
+                  <li>
+                    <v-icon class="mr-2">mdi-discord</v-icon>
+                    <a href="https://discord.gg/mumei-civilization" target="_blank">Server Invite</a>
+                  </li>
                   <li>Event organization</li>
                   <li>Mural, the community drawing</li>
                   <li>Message/art collection</li>
@@ -192,22 +194,24 @@
               </li>
               <li class="pb-4">
                 <strong class="mr-2">Mumei Sanctuary Discord</strong>
-                <v-icon>mdi-discord</v-icon>
                 <ul>
-                  <li><a href="https://discord.gg/hoomanity" target="_blank">Server Invite</a></li>
+                  <li>
+                    <v-icon class="mr-2">mdi-discord</v-icon>
+                    <a href="https://discord.gg/hoomanity" target="_blank">Server Invite</a>
+                  </li>
                   <li>Art collage</li>
                   <li>Yosetti message board</li>
                   <li>Community announcements, etc</li>
                 </ul>
               </li>
-              <li class="pb-4">
+              <!-- <li class="pb-4">
                 <strong class="mr-2">水卯</strong>
                 <v-icon>mdi-twitter</v-icon>
                 <a target="_blank" href="https://twitter.com/Minau_">@Minau_</a>
                 <ul>
                   <li>Mumei Sanctuary Discord logo</li>
                 </ul>
-              </li>
+              </li> -->
               <li class="pb-4">
                 <strong class="mr-2">galex</strong>
                 <!-- <v-icon>mdi-twitter</v-icon>
@@ -222,16 +226,28 @@
             <v-container>
               <v-row>
                 <v-col cols="12" lg="6">
-                  <v-img
-                    lazy-src="../assets/credits-civ.png"
-                    src="../assets/credits-civ.png"
-                  ></v-img>
+                  <a href="https://discord.gg/mumei-civilization" target="_blank">
+                    <v-img
+                      lazy-src="../assets/credits-civ.png"
+                      src="../assets/credits-civ.png"
+                    ></v-img>
+                  </a>
+                  <p class="text-center">
+                    <a href="https://discord.gg/mumei-civilization" target="_blank" class="text-decoration-none">
+                      <h4>Mumei Civilization Discord</h4>
+                    </a>
+                  </p>
                 </v-col>
-                <v-col cols="12" lg="6">
-                  <v-img
+                <v-col cols="12" lg="6" class="text-center pt-16">
+                  <p class="text-center">
+                    <a href="https://discord.gg/hoomanity" target="_blank" class="text-decoration-none">
+                      <h4>Mumei Sanctuary Discord</h4>
+                    </a>
+                  </p>
+                  <!-- <v-img
                     lazy-src="../assets/credits-sanc.png"
                     src="../assets/credits-sanc.png"
-                  ></v-img>
+                  ></v-img> -->
                 </v-col>
               </v-row>
             </v-container>
