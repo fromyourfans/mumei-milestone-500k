@@ -264,7 +264,7 @@ import InnerImageZoom from 'vue-inner-image-zoom';
 import { Tweet } from 'vue-tweet-embed';
 import twemoji from 'twemoji';
 import backupData from '@/data/data.json';
-import CanvasImg from '@/assets/sample1.png';
+import CanvasImg from '@/assets/mural1.png';
 import CollageImg from '@/assets/sample2.png';
 
 export default {
