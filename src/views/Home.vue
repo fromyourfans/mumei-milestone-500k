@@ -24,22 +24,13 @@
       <v-container class="content-grid pt-16">
         <div class="ribbon ribbon-left"></div>
         <div class="ribbon ribbon-right"></div>
-        <p class="text-center mb-2">
-          <v-btn text
-            color="red" elevation="0" class="mr-4"
-            href="https://www.youtube.com/channel/UC3n5uGu18FoCy23ggWWp8tA"
-            target="_blank">
-            <v-icon left>mdi-youtube</v-icon> YouTube
-          </v-btn>
-          <v-btn text
-            color="blue lighten-2" elevation="0" class="mr-4"
-            href="https://twitter.com/nanashimumei_en"
-            target="_blank">
-            <v-icon left>mdi-twitter</v-icon> Twitter
-          </v-btn>
-        </p>
         <p class="text-center text-h6 mb-2">
-          Congratulations to Nanashi Mumei for reaching 500,000 subscribers on YouTube!
+          Congratulations to
+          <a href="https://www.youtube.com/channel/UC3n5uGu18FoCy23ggWWp8tA"
+            target="_blank" class="blue--text text-decoration-none">
+            Nanashi Mumei
+          </a>
+          for reaching 500,000 subscribers on YouTube!
         </p>
 
         <!-- NAVIGATION -->
@@ -49,18 +40,18 @@
               <v-avatar left size="34"><img src="../assets/rune2.png" class="navimg"></v-avatar>
               <span class="pl-2 text-h6">Mural</span>
             </v-btn>
-            <v-btn text class="brown--text darken-3" @click="scrollTo('#messages')">
-              <v-avatar left size="34"><img src="../assets/rune2.png" class="navimg"></v-avatar>
-              <span class="pl-2 text-h6">Messages</span>
-            </v-btn>
-            <v-btn text class="brown--text darken-3" @click="scrollTo('#artworks')">
-              <v-avatar left size="34"><img src="../assets/rune2.png" class="navimg"></v-avatar>
-              <span class="pl-2 text-h6">Artworks</span>
-            </v-btn>
             <v-btn text class="brown--text darken-3" @click="scrollTo('#collage')">
               <v-avatar left size="34"><img src="../assets/rune2.png" class="navimg"></v-avatar>
               <span class="pl-2 text-h6">Collage</span>
             </v-btn>
+            <v-btn text class="brown--text darken-3" @click="scrollTo('#messages')">
+              <v-avatar left size="34"><img src="../assets/rune2.png" class="navimg"></v-avatar>
+              <span class="pl-2 text-h6">Messages</span>
+            </v-btn>
+            <!-- <v-btn text class="brown--text darken-3" @click="scrollTo('#artworks')">
+              <v-avatar left size="34"><img src="../assets/rune2.png" class="navimg"></v-avatar>
+              <span class="pl-2 text-h6">Artworks</span>
+            </v-btn> -->
           </v-col>
         </v-row>
 
@@ -83,6 +74,25 @@
           </v-col>
         </v-row>
 
+        <!-- COLLAGE -->
+        <v-row no-gutters class="mt-8 mb-8" id="collage">
+          <v-col class="text-h6 text-center px-2 brown lighten-3 mx-8 rounded-xl">
+            ART COLLAGE
+            <v-btn text class="float-right brown--text darken-3" @click="scrollTo('#header')">
+              TOP
+            </v-btn>
+          </v-col>
+        </v-row>
+        <v-row no-gutters class="mb-8">
+          <v-col class="collage" sm="10" offset-sm="1">
+            <div class="collage-container mx-auto">
+              <inner-image-zoom
+                :src="CollageImg"
+                :zoomSrc="CollageImg" />
+            </div>
+          </v-col>
+        </v-row>
+
         <!-- MESSAGES -->
         <v-row no-gutters class="mt-8 mb-8" id="messages">
           <v-col class="text-h6 text-center px-2 brown lighten-3 mx-8 rounded-xl">
@@ -95,17 +105,17 @@
         <v-row no-gutters>
           <v-col class="cards px-4">
             <div v-masonry transition-duration="0.3s" item-selector=".card">
-              <div class="card card-dark pt-6">
+              <div class="card card-dark pt-8">
                 <div class="binder"></div>
-                <div class="card-name text-h6 blue--text text-center">Yosetti Board</div>
-                <div class="card-text text-body-2 pr-4 black--text pb-4 text-center">
-                  Additional messages from the community can be found
-                  over at the Yosetti message board:
-                  <div class="text--center mt-2">
-                    <a class="card-name blue--text text-decoration-none text-h6"
+                <div class="card-name text-h4 blue--text text-center mb-4">Yosetti Board</div>
+                <div class="card-text text-h6 px-8 black--text pb-4 text-center">
+                  More messages from the members of the community were collected,
+                  and can be found over at the Yosetti message board:
+                  <div class="text--center mt-4 mb-4">
+                    <a class="card-name blue--text text-decoration-none text-h5"
                       href="https://yosetti.com/mainyosegakis/gift_send_web?id=1989690&sc=VEhZ4"
                       target="_blank">
-                      OPEN
+                      OPEN LINK
                     </a>
                   </div>
                 </div>
@@ -113,15 +123,15 @@
               <div v-masonry-tile class="card pt-6" v-for="(item, ix) in cards" :key="`card-${ix}`">
                 <div class="binder"></div>
                 <div class="wings"><img src="../assets/feather.png" /></div>
-                <div class="card-name text-subtitle-2 pr-12">{{item.name}}</div>
-                <div class="card-text text-body-2 pr-4 pb-4">{{item.message}}</div>
+                <div class="card-name text-h6 pr-12">{{item.name}}</div>
+                <div class="card-text text-h6 pr-4 pb-4">{{item.message}}</div>
               </div>
             </div>
           </v-col>
         </v-row>
 
         <!-- ARTWORKS -->
-        <v-row no-gutters class="mt-8 mb-8" id="artworks">
+        <!-- <v-row no-gutters class="mt-8 mb-8" id="artworks">
           <v-col class="text-h6 text-center px-2 brown lighten-3 mx-8 rounded-xl">
             ARTWORKS
             <v-btn text class="float-right brown--text darken-3" @click="scrollTo('#header')">
@@ -137,26 +147,7 @@
               <Tweet :id="item"></Tweet>
             </v-card>
           </v-col>
-        </v-row>
-
-        <!-- COLLAGE -->
-        <v-row no-gutters class="mt-8 mb-8" id="collage">
-          <v-col class="text-h6 text-center px-2 brown lighten-3 mx-8 rounded-xl">
-            COLLAGE
-            <v-btn text class="float-right brown--text darken-3" @click="scrollTo('#header')">
-              TOP
-            </v-btn>
-          </v-col>
-        </v-row>
-        <v-row no-gutters class="mb-8">
-          <v-col class="collage" sm="10" offset-sm="1">
-            <div class="collage-container mx-auto">
-              <inner-image-zoom
-                :src="CollageImg"
-                :zoomSrc="CollageImg" />
-            </div>
-          </v-col>
-        </v-row>
+        </v-row> -->
 
         <!-- CREDITS -->
         <v-row no-gutters class="mt-8 mb-8">
@@ -265,7 +256,7 @@ import { Tweet } from 'vue-tweet-embed';
 import twemoji from 'twemoji';
 import backupData from '@/data/data.json';
 import CanvasImg from '@/assets/mural1.png';
-import CollageImg from '@/assets/sample2.png';
+import CollageImg from '@/assets/mural2.png';
 
 export default {
   data: () => ({
@@ -274,8 +265,6 @@ export default {
     tweets: [],
     CanvasImg,
     CollageImg,
-    // CanvasImg: 'https://cdn.discordapp.com/attachments/880074875006484551/896932818096115752/magicaldraw_20211011_031915.png',
-    // CollageImg: 'https://yt3.ggpht.com/m9wSBI0oUz24Y_qxUEJ6-XofvnC6GjWxN0Ut79IG8Vn-3Z49T8VOJEXa03uN9JDlJN6XVy7ZqbM=w4500',
   }),
   methods: {
     scrollTo(target) {
@@ -428,8 +417,8 @@ export default {
 }
 
 .card {
-  width:24%;
-  margin:5px 0.5%;
+  width:32%;
+  margin:10px 0.5%;
 }
 
 @media only screen and (max-width: 1264px) {
@@ -455,7 +444,7 @@ export default {
 <style lang="scss">
 .card-text {
   img {
-    height:1rem;
+    height:1.4rem;
   }
 }
 </style>

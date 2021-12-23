@@ -10,24 +10,24 @@ module.exports = {
     // HTML Title used for OpenGraph linters (social media links)
     config.plugin('html').tap((args) => {
       // eslint-disable-next-line no-param-reassign
-      args[0].title = 'Nanashi Mumei 500k Subsribers Tribute';
+      args[0].title = 'Nanashi Mumei 500k Subscribers Tribute';
       // eslint-disable-next-line no-param-reassign
       args[0].meta = {
-        'og:title': 'Nanashi Mumei 500k Subsribers Tribute',
+        'og:title': 'Nanashi Mumei 500k Subscribers Tribute',
         'og:type': 'website',
         'og:description': 'The community celebrates Nanashi Mumei reaching 500,000 YouTube subscribers.',
-        // 'og:image': '',
+        'og:image': 'https://mumei500k.fromyour.fans/mumei500k.png',
         'twitter:card': 'summary_large_image',
-        'twitter:title': 'Nanashi Mumei 500k Subsribers Tribute',
+        'twitter:title': 'Nanashi Mumei 500k Subscribers Tribute',
         'twitter:description': 'The community celebrates Nanashi Mumei reaching 500,000 YouTube subscribers.',
-        // 'twitter:image': '',
+        'twitter:image': 'https://mumei500k.fromyour.fans/mumei500k.png',
       };
       return args;
     });
   },
   pwa: {
     name: 'mumei500k',
-    assetsVersion: '202111082226',
+    assetsVersion: '2021_12_23_02_23',
     workboxOptions: {
       exclude: [
         'CNAME',
