@@ -2,13 +2,13 @@
   <div>
     <!-- HEADER -->
     <div class="header" id="header">
+      <div class="headback mx-auto"></div>
       <div class="headbg mx-auto"></div>
-      <div class="wings mx-auto"></div>
     </div>
 
     <!-- BAR -->
     <div class="bar text-center">
-      <div class="mainphoto">
+      <!-- <div class="mainphoto">
         <div class="mainphoto-box">
           <v-img
             :aspect-ratio="1"
@@ -16,12 +16,12 @@
             src="https://pbs.twimg.com/media/FDx_j3wVUAQzKkb?format=jpg&name=medium"
           ></v-img>
         </div>
-      </div>
+      </div> -->
     </div>
 
     <!-- CONTENT -->
     <div class="content">
-      <v-container class="content-grid pt-16">
+      <v-container class="content-grid pt-8">
         <div class="ribbon ribbon-left"></div>
         <div class="ribbon ribbon-right"></div>
         <p class="text-center text-h6 mb-2">
@@ -48,10 +48,10 @@
               <v-avatar left size="34"><img src="../assets/rune2.png" class="navimg"></v-avatar>
               <span class="pl-2 text-h6">Messages</span>
             </v-btn>
-            <!-- <v-btn text class="brown--text darken-3" @click="scrollTo('#artworks')">
+            <v-btn text class="brown--text darken-3" @click="scrollTo('#artworks')">
               <v-avatar left size="34"><img src="../assets/rune2.png" class="navimg"></v-avatar>
               <span class="pl-2 text-h6">Artworks</span>
-            </v-btn> -->
+            </v-btn>
           </v-col>
         </v-row>
 
@@ -131,7 +131,7 @@
         </v-row>
 
         <!-- ARTWORKS -->
-        <!-- <v-row no-gutters class="mt-8 mb-8" id="artworks">
+        <v-row no-gutters class="mt-8 mb-8" id="artworks">
           <v-col class="text-h6 text-center px-2 brown lighten-3 mx-8 rounded-xl">
             ARTWORKS
             <v-btn text class="float-right brown--text darken-3" @click="scrollTo('#header')">
@@ -147,7 +147,7 @@
               <Tweet :id="item"></Tweet>
             </v-card>
           </v-col>
-        </v-row> -->
+        </v-row>
 
         <!-- CREDITS -->
         <v-row no-gutters class="mt-8 mb-8">
@@ -167,6 +167,7 @@
                 <a target="_blank" href="https://twitter.com/jetri_co">@jetri_co</a>
                 <ul>
                   <li>Website development, graphics</li>
+                  <li>Header Artwork</li>
                   <li>Backend automations</li>
                 </ul>
               </li>
@@ -300,17 +301,25 @@ export default {
   height:200px;
   background:linear-gradient(to right, #907D6F 10%, #E9DCCD 40%, #E9DCCD 60%, #907D6F 90%);
   position:relative;
-  .headbg {
+  .headback {
     width:100%;
     height:200px;
     position:absolute;
     z-index:1;
+    background-image:url("../assets/header.png");
+    background-position: center center;
+    background-size:140%;
+    filter:blur(10px);
   }
-  .wings {
+  .headbg {
     width:100%;
     height:200px;
     position:absolute;
     z-index:2;
+    background-image:url("../assets/header.png");
+    background-position: center 0px;
+    background-repeat: repeat-y;
+    background-size:1200px;
   }
 }
 .bar {
