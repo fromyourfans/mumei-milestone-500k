@@ -27,7 +27,7 @@ module.exports = {
   },
   pwa: {
     name: 'mumei500k',
-    assetsVersion: '2021_12_23_02_23',
+    assetsVersion: '2021_12_28_02_53',
     workboxOptions: {
       exclude: [
         'CNAME',
