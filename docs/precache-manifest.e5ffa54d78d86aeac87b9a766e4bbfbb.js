@@ -1,7 +1,7 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "63c35fb6a97cadfa2a29",
-    "url": "/css/app.228ff460.css"
+    "revision": "5896ed49ebb636c09256",
+    "url": "/css/app.40a96688.css"
   },
   {
     "revision": "17e5de3dd7bcdcc296d1",
@@ -116,12 +116,12 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/img/scroll-light-2.e9c4958c.png"
   },
   {
-    "revision": "45c0a5ac040a46eca8d2aec803645711",
+    "revision": "678b746fffa43f943a52b116d8db8785",
     "url": "/index.html"
   },
   {
-    "revision": "63c35fb6a97cadfa2a29",
-    "url": "/js/app.4a26b21c.js"
+    "revision": "5896ed49ebb636c09256",
+    "url": "/js/app.81bde497.js"
   },
   {
     "revision": "17e5de3dd7bcdcc296d1",
