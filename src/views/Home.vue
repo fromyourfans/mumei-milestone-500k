@@ -180,7 +180,7 @@
                   </li>
                   <li>Event organization</li>
                   <li>Mural, the community drawing</li>
-                  <li>Message/art collection</li>
+                  <li>Message collection / Tweet hashtag</li>
                   <li>Community announcements, etc</li>
                 </ul>
               </li>
@@ -217,29 +217,27 @@
           <v-col cols="12" sm="6" lg="8">
             <v-container>
               <v-row>
-                <v-col cols="12" lg="6">
-                  <a href="https://discord.gg/mumei-civilization" target="_blank">
+                <v-col cols="12" lg="6" class="text-center">
+                  <a href="https://twitter.com/MumeiCiv/status/1477299356986494979" target="_blank">
                     <v-img
                       lazy-src="../assets/credits-civ.png"
                       src="../assets/credits-civ.png"
                     ></v-img>
                   </a>
-                  <p class="text-center">
-                    <a href="https://discord.gg/mumei-civilization" target="_blank" class="text-decoration-none">
-                      <h4>Mumei Civilization Discord</h4>
-                    </a>
-                  </p>
+                  <h4 class="text-center ma-0 pa-0">Mumei Civilization Discord</h4>
                 </v-col>
-                <v-col cols="12" lg="6" class="text-center pt-16">
-                  <p class="text-center">
-                    <a href="https://discord.gg/hoomanity" target="_blank" class="text-decoration-none">
-                      <h4>Mumei Sanctuary Discord</h4>
-                    </a>
+                <v-col cols="12" lg="6" class="text-center pt-4">
+                  <a href="https://twitter.com/MumeiSanctuary/status/1477349346219905026" target="_blank">
+                    <img :src="CollageImg"
+                      style="max-height:200px;" class="mb-4" />
+                  </a>
+                  <h4 class="text-center">Mumei Sanctuary Discord Collage Artists</h4>
+                  <p>
+                    Tex, kimfully, @alnomnomnom, HoloArtemis, Erich, Xander, fireofhell06,
+                    @Sayo0692, WildestDuck, DedeHeav, Elious, Lingyi2400, Nanashi_Panda,
+                    @outhaleart, Sock, PotatoIsNotCute, rafidfire, @rem26_art,
+                    @HoneyStarDraws, @TheAmazingPoyo
                   </p>
-                  <!-- <v-img
-                    lazy-src="../assets/credits-sanc.png"
-                    src="../assets/credits-sanc.png"
-                  ></v-img> -->
                 </v-col>
               </v-row>
             </v-container>
