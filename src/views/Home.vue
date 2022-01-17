@@ -75,7 +75,7 @@
         </v-row>
 
         <!-- COLLAGE -->
-        <v-row no-gutters class="mt-8 mb-8" id="collage">
+        <v-row no-gutters class="mt-8 mb-2" id="collage">
           <v-col class="text-h6 text-center px-2 brown lighten-3 mx-8 rounded-xl">
             ART COLLAGE
             <v-btn text class="float-right brown--text darken-3" @click="scrollTo('#header')">
@@ -94,7 +94,7 @@
         </v-row>
 
         <!-- MESSAGES -->
-        <v-row no-gutters class="mt-8 mb-8" id="messages">
+        <v-row no-gutters class="mt-8 mb-4" id="messages">
           <v-col class="text-h6 text-center px-2 brown lighten-3 mx-8 rounded-xl">
             MESSAGES
             <v-btn text class="float-right brown--text darken-3" @click="scrollTo('#header')">
